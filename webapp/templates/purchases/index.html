@@ -12,7 +12,7 @@
                 </div>
                 {% endif %}
             {% endwith %}
-            <h2>Новости:</h2>
+            <h2>Покупки:</h2>
             {% for purchase in purchases %}
                 <h3><a href = {{ purchases.url }}>{{ purchases.title }}</a></h3>
                 <p>{{ purchases.date.strftime('%d.%m.%Y') }}</p>

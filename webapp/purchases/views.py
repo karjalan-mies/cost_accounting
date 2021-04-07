@@ -8,5 +8,5 @@ blueprint = Blueprint('purchases', __name__)
 @blueprint.route('/index')
 def index():
     news_list = Purchases.query.order_by(Purchases.date.desc()).all()
-    title = 'Новости Python'
+    title = 'Аналитика расходов'
     return render_template('purchases/index.html', title=title, news_list=news_list)
